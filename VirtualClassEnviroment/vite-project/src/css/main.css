@@ -1,0 +1,51 @@
+/*css variable definitions*/
+:root{
+    --primary: #4E4187;
+    --secondary: #FFCFF6;
+    --fontColor: #FFF7EF; 
+    /*
+    ALTERNATIVE PALETTE
+    --primary: #EE964B;
+    --secondary: #F4D35E;
+    --fontColor: #FAF0CA; 
+    */
+    
+}
+/*
+calling a variable in css
+.example{
+    border-color: var(--blue);
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#container{
+    max-width: 95vw;
+    margin: auto;
+}
+.header{
+    padding: 15px 0px;
+}
+.header-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+}
+#body_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    border: 2px solid black;
+}
+
+.browserRouter_container{
+    min-width: 500px;
+    flex-grow: 1;
+}
+.footer{
+    background-color: var(--primary);
+    color: var(--fontColor);
+}
